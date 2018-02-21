@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.gelostech.zoomsta.activities.LoginActivity">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_camera_lens"
+        android:id="@+id/sign_in_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/sign_in_logo"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:hint="username"
+            android:cursorVisible="false"
+            android:background="@drawable/search_border"
+            android:gravity="center"
+            android:id="@+id/username"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:id="@+id/password"
+            android:background="@drawable/search_border"
+            android:layout_marginTop="10dp"
+            android:inputType="textPassword"
+            android:gravity="center"
+            android:hint="password"/>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_button_bg"
+            android:text="Log in"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/login"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/accept_terms"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="By loging in, you agree to our "
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Privacy policy"
+                android:id="@+id/terms_of_use"
+                android:textStyle="bold"
+                android:textColor="#ff0000"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <com.gelostech.zoomsta.commoners.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:textSize="25sp"
+        android:textColor="@color/colorAccent"
+        android:layout_alignParentBottom="true"
+        android:text="Login with Instagram account"/>
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#5A4173</color>
+    <color name="colorAccent">#5A4173</color>
+    <color name="editext_border">#B4ACBD</color>
+    <color name="colorDark">#000000</color>
+    <color name="darkText">#838383</color>
+</resources>

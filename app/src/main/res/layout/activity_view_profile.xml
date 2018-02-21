@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorDark"
+    android:animateLayoutChanges="true"
+    tools:context="com.gelostech.zoomsta.activities.ViewProfileActivity">
+
+    <com.google.android.gms.ads.AdView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/prof_banner_ad"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner_ad_id"/>
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/prof_banner_ad"
+        android:id="@+id/main_imageview"/>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_options"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:padding="20dp">
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="7dp"
+            android:background="@drawable/round_button_border"
+            android:src="@drawable/ic_share"
+            android:id="@+id/button_share"/>
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="7dp"
+            android:layout_toRightOf="@id/button_share"
+            android:layout_marginLeft="15dp"
+            android:visibility="gone"
+            android:background="@drawable/round_button_border"
+            android:src="@drawable/ic_save"
+            android:id="@+id/button_save"/>
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="7dp"
+            android:layout_toRightOf="@id/button_share"
+            android:layout_marginLeft="15dp"
+            android:visibility="gone"
+            android:background="@drawable/round_button_border"
+            android:src="@drawable/ic_delete"
+            android:id="@+id/button_delete"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

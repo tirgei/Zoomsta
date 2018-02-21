@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_rate"
+        android:icon="@drawable/ic_star"
+        android:title="@string/rate_app"/>
+
+    <item
+        android:id="@+id/navigation_share"
+        android:icon="@drawable/ic_share"
+        android:title="@string/share_app"/>
+
+    <item
+        android:id="@+id/navigation_mailus"
+        android:icon="@drawable/ic_email"
+        android:title="@string/send_feedback"/>
+
+    <item
+        android:id="@+id/navigation_tac"
+        android:icon="@drawable/ic_tac"
+        android:title="Terms of Use"/>
+
+    <item
+        android:id="@+id/navigation_exit"
+        android:icon="@drawable/ic_exit"
+        android:title="@string/log_out"/>
+
+</menu>

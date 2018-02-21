@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/search_icon"
+        android:icon="@drawable/ic_search_icon"
+        android:orderInCategory="100"
+        android:title="@string/search_users"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/clear"
+        android:orderInCategory="200"
+        app:showAsAction="never"
+        android:title="@string/clear_history"/>
+
+</menu>
